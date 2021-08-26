@@ -4,3 +4,6 @@ This repo contains some introductory concepts on the C programming Language as p
 
 
 0x00-Hello_World - Script to compile code in C to the preprocessor stage and nothing further.
+
+1-compiler: compiles source code without linking using option c.
+
