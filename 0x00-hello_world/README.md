@@ -12,3 +12,5 @@ This repo contains some introductory concepts on the C programming Language as p
 4-puts.c: program prints ""Programming is like building a multilingual puzzle" followed by a new line.
 
 5-printf: prints a statement using printf
+
+6-size.c: program to print the size of various data types.
