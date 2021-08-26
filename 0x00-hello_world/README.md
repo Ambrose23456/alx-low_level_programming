@@ -7,3 +7,4 @@ This repo contains some introductory concepts on the C programming Language as p
 
 1-compiler: compiles source code without linking using option c.
 
+2-assembler: This script processes source code and generates the assembly code.
