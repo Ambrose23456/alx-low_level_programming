@@ -8,3 +8,5 @@ This repo contains some introductory concepts on the C programming Language as p
 1-compiler: compiles source code without linking using option c.
 
 2-assembler: This script processes source code and generates the assembly code.
+
+4-puts.c: program prints ""Programming is like building a multilingual puzzle" followed by a new line.
