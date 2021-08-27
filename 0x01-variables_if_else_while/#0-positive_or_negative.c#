@@ -1,12 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
-
 /**
+ *main - entry point
  *
- *main - starting point of function
- *
- *n: is an integer variable
  *
  *Return: Sucess (0)
  */
