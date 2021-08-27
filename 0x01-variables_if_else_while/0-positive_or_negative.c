@@ -3,12 +3,10 @@
 #include <stdio.h>
 
 /**
- *
  *main - starting point of function
  *
- *n: is an integer variable
  *
- *Return: Sucess (0)
+ *Return: Sucess(0)
  */
 int main(void)
 {

@@ -1,17 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-
 
 /**
  *main - entry point
  *
- *Return: Always0(Success)
+ *prints the alphabets backwards
+ *
+ *Return: success(0)
  */
 int main(void)
 {
 	char c;
 
-	for (c = 'a'; a <= 'z'; c++)
+	for (c = 'z'; c <= 'a'; c--)
 	{
 		putchar(c);
 	}
