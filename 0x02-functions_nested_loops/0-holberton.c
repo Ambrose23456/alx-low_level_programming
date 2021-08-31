@@ -9,12 +9,12 @@
  */
 int main(void)
 {
-	char holberton[9] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n'};
+	char *h = "_putchar";
 	unsigned int i;
 
-	for (i = 0; i < sizeof(holberton); i++)
+	for (i = 0; i < sizeof(h); i++)
 	{
-		_putchar(holberton[i]);
+		_putchar(h[i]);
 	}
 	_putchar('\n');
 	return (0);
