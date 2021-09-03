@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_diagonal - prints a diagonal line
+0;136;0c *print_diagonal - prints a diagonal line
  *@n: parameters to be passed into function
  *
  *Return: Always(0)
@@ -10,11 +10,21 @@ void print_diagonal(int n)
 {
 	if (n > 0)
 	{
-		while (n > 0)
+		int j = 0;
+
+		while (j < n)
 		{
+			int i;
+
+			for (i = 1; i <= j; i++)
+			{
+				_putchar(' ');
+			} 
 			_putchar('\\');
-			n--;
+			_putchar('\n');
+			j++;
 		}
 	}
-	_putchar('\n');
+	else
+		_putchar('\n');
 }
