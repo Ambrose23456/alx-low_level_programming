@@ -13,10 +13,10 @@ void print_square(int size)
 		int length = 0;
 		int breadth;
 
-		while (length <= size)
+		while (length < size)
 		{
 			breadth = 0;
-			while (breadth <= size)
+			while (breadth < size)
 			{
 				_putchar('#');
 				breadth++;
@@ -25,5 +25,6 @@ void print_square(int size)
 			length++;
 		}
 	}
-	_putchar ('\n');
+	else
+		_putchar ('\n');
 }
