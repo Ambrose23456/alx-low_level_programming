@@ -1,1 +1,1 @@
-0-strcat.c - cats the string
+0-strcat.c - cats the strings
