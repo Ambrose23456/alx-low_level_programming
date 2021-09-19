@@ -1,0 +1,1 @@
+contains application of argc and argc argument in C.
