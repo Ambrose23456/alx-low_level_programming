@@ -1,34 +1,39 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
- *main - entry point
- *@argc: count of arguments passed into the command line
- *@argv: a string indexing argc
+ * main - Print result of adding given arguments
+ * @argc: number of arguments passed to command line
+ * @argv: An array of Arguments storing argc
  *
- *Return: exit(0)
+ * Return: 0 on sucess, 1 on error.
  */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int sum;
+	int count;
+	int i;
 
+	count = 1;
+	sum = 0;
 	if (argc == 1)
 	{
 		printf("0\n");
 		return (0);
 	}
-	for (i = 1; i < argc; i++)
+	while (count < argc)
 	{
-		if (*argv[i] >= 48 && *argv[i] <= 57)
+		for (i = 0; argv[count][i] != '\0'; i++)
 		{
-			sum = sum + atoi(argv[i]);
+			if (!(isdigit(argv[count][i])))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		sum += atoi(argv[count]);
+		count++;
 	}
 	printf("%d\n", sum);
 	return (0);
