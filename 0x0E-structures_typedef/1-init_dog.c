@@ -5,6 +5,7 @@
  *@d: a char
  *@name: a char
  *@owner: a char
+ *@age: an int
  *
  *Description: a long description
  */
