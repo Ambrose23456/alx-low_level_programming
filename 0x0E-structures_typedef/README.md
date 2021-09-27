@@ -1,0 +1,1 @@
+dog.h - creates a struct of 3 members
