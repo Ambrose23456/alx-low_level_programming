@@ -1,9 +1,4 @@
 #ifndef FUNCTION_LIKE_MACRO
 #define FUNCTION_LIKE_MACRO
-#define ABS(x)\
-	if (x >= 0)\
-	return (x);\
-	else if (x < 0)\
-	return (x * (-1));\
-
+#define ABS(x) ((x) < 0 ? (-(x)) : (x))
 #endif
