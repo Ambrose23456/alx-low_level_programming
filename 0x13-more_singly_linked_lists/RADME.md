@@ -1,0 +1,1 @@
+0-print_list: treverses a link listed and prints all contents
