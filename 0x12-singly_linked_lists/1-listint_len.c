@@ -1,38 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "lists.h"
+#include <stddef.h>
 
-/**
- * struct listint_s - singly linked list
- * @n: integer
- * @next: points to the next node
- *
- * Description: singly linked list node structure
- *
- */
-typedef struct listint_s
-{
-    int n;
-    struct listint_s *next;
-}listint_t;
-
-/**
- *listint_len - calculates the lenght of a linked list
- *@h: pointer to the node
- *
- *Return: length of the linked list or NULL
- */
-
+ /**
+  *listint_len - return the number of elements of a linked list
+  *@h: pointer to linked list
+  *
+  *Return: length
+  */
 size_t listint_len(const listint_t *h)
 {
-	struct node *current = h;
 	unsigned int count = 0;
 
 	if (!h)
-		return NULL;
-	while (current != NULL)
+		return (0);
+	while (h != NULL)
 	{
-		for (current = head; current != NULL; current++);
 		count++;
+		h = h->next;
 	}
-	return (count);
+	return ((size_t)count);
 }
+
